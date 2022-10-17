@@ -18,6 +18,9 @@ const Navbar = () => {
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   // console.log(isMatch)
 
+  const forsmall = useMediaQuery(theme.breakpoints.down("sm"));
+  console.log(forsmall)
+
   const CustomBox = styled(Box)(({ theme }) => ({
     display: "flex",
     alignItems: "center",
@@ -34,7 +37,7 @@ const Navbar = () => {
     justifyContent: "space-between",
     gap: "1rem",
     [theme.breakpoints.down("sm")]: {
-      flexDirection: "column",
+      // flexDirection: "column",
     },
   }));
 
@@ -73,13 +76,13 @@ const Navbar = () => {
             </Link>
             {isMatch ? (
               <>
-                <Typography
+                {/* <Typography
                   variant="h6"
                   component="div"
                   sx={{ flexGrow: 1, fontWeight: "bold" }}
                 >
-                  GANGADHAR
-                </Typography>
+                  
+                </Typography> */}
                 <DrawerComponent />
               </>
             ) : (
