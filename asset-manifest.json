@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.d9211430.css",
-    "main.js": "/static/js/main.3c8ffd40.js",
+    "main.js": "/static/js/main.fa77efd0.js",
     "static/media/kfc_app.png": "/static/media/kfc_app.a029d3d88ba8bbc3a65b.png",
     "static/media/weather_app.png": "/static/media/weather_app.33cc4254cf504f4788d6.png",
     "static/media/unbounce_app.png": "/static/media/unbounce_app.38636eceb1f07f3a9542.png",
     "static/media/mylogo.png": "/static/media/mylogo.225657a73da44ddfa650.png",
     "index.html": "/index.html",
     "main.d9211430.css.map": "/static/css/main.d9211430.css.map",
-    "main.3c8ffd40.js.map": "/static/js/main.3c8ffd40.js.map"
+    "main.fa77efd0.js.map": "/static/js/main.fa77efd0.js.map"
   },
   "entrypoints": [
     "static/css/main.d9211430.css",
-    "static/js/main.3c8ffd40.js"
+    "static/js/main.fa77efd0.js"
   ]
 }
