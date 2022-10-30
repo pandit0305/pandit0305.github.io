@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.38ff7ed1.css",
-    "main.js": "/static/js/main.91b9a601.js",
+    "main.css": "/static/css/main.d45e1cef.css",
+    "main.js": "/static/js/main.cae5ea18.js",
     "static/media/kfc_app.png": "/static/media/kfc_app.a029d3d88ba8bbc3a65b.png",
     "static/media/weather_app.png": "/static/media/weather_app.33cc4254cf504f4788d6.png",
     "static/media/unbounce_app.png": "/static/media/unbounce_app.38636eceb1f07f3a9542.png",
     "static/media/pandit1.png": "/static/media/pandit1.f9e9215f294a44b832ae.png",
-    "static/media/mylogo.png": "/static/media/mylogo.225657a73da44ddfa650.png",
     "index.html": "/index.html",
-    "main.38ff7ed1.css.map": "/static/css/main.38ff7ed1.css.map",
-    "main.91b9a601.js.map": "/static/js/main.91b9a601.js.map"
+    "main.d45e1cef.css.map": "/static/css/main.d45e1cef.css.map",
+    "main.cae5ea18.js.map": "/static/js/main.cae5ea18.js.map"
   },
   "entrypoints": [
-    "static/css/main.38ff7ed1.css",
-    "static/js/main.91b9a601.js"
+    "static/css/main.d45e1cef.css",
+    "static/js/main.cae5ea18.js"
   ]
 }
