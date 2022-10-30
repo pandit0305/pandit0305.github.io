@@ -9,7 +9,6 @@ import {
   Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import navIcon from "../media/mylogo.png";
 import { Link } from "react-scroll";
 
 function DrawerComponent() {
@@ -20,20 +19,26 @@ function DrawerComponent() {
       <Box style={{ border: "1px solid white", borderRadius: "10px" }}>
         <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)}>
           <Box style={{height:"100%", backgroundColor: "rgba(0, 10, 31, 255)"}}>
-            <Box
-              component="img"
-              sx={{
-                maxHeight: "45px",
-                maxWidth: "45px",
-                objectFit: "cover",
-                position:"fixed",
-                top:"30px",
-                left:"50px"
-              }}
-              src={navIcon}
-            />
+          <Typography
+                    variant="h6"
+                    component="div"
+                    sx={{
+                      textAlign:"center",
+                      flexGrow: 1,
+                      fontWeight: "bold",
+                      fontFamily: "Brush Script MT, Brush Script Std, cursive",
+                      fontSize: "30px",
+                      border:"1px solid white",
+                      borderLeft:"none",
+                      borderRight:"none",
+                      color: "rgba(0,199,255,255)",
+                    }}
+                  >
+                    Pandit
+                    
+                  </Typography>
             <List
-              sx={{ mt: 12, ml:1, p:2 }}
+              sx={{ mt: 1, ml:1, p:2 }}
               
             >
               <ListItemButton>
@@ -110,9 +115,12 @@ function DrawerComponent() {
             </List>
           </Box>
         </Drawer>
-        <IconButton onClick={() => setOpenDrawer(!openDrawer)}>
-          <MenuIcon sx={{ color: "white", fontSize: "22px" }} />
-        </IconButton>
+        <Box>
+          <IconButton onClick={() => setOpenDrawer(!openDrawer)}>
+            <MenuIcon sx={{ color: "white", fontSize: "22px"}} />
+          </IconButton>
+
+        </Box>
       </Box>
     </React.Fragment>
   );

@@ -1,8 +1,7 @@
 import { Box, Typography, styled } from "@mui/material";
 import React from "react";
 // import Testimonial from "./Testimonial";
-import Introduction from '../components/Introduction';
-
+import Introduction from "../components/Introduction";
 
 const About = () => {
   const CustomBox = styled(Box)(({ theme }) => ({
@@ -28,14 +27,23 @@ const About = () => {
   }));
 
   return (
-    <>
+    <Box>
       <Box
-        sx={{ maxwidth: "1300px", my: 10, padding: 3, mx: "auto" }}
+        style={{
+          height: "1px",
+          width: "100%",
+          border: 0,
+          borderRadius: "25px",
+        }}
         id="about"
-      >
+      ></Box>
+      <Box sx={{ maxwidth: "1300px", my: 10, padding: 3, mx: "auto", mt: 15 }}>
         <CustomtitleBox>
-          <Typography variant="h4" sx={{ color: "white", textAlign: "center", fontWeight:"bold" }}>
-            ABOUT <span style={{color:"#00C7FF"}}>ME</span>
+          <Typography
+            variant="h4"
+            sx={{ color: "white", textAlign: "center", fontWeight: "bold" }}
+          >
+            ABOUT <span style={{ color: "#00C7FF" }}>ME</span>
           </Typography>
           <div
             style={{
@@ -53,10 +61,10 @@ const About = () => {
           <Testimonial />
           <Testimonial />
           <Testimonial /> */}
-          <Introduction/>
+          <Introduction />
         </CustomBox>
 
-        <div
+        {/* <div
           style={{
             height: "1px",
             backgroundColor: "#00C7FF",
@@ -64,9 +72,9 @@ const About = () => {
             border: 0,
             borderRadius: "25px",
           }}
-        ></div>
+        ></div> */}
       </Box>
-    </>
+    </Box>
   );
 };
 

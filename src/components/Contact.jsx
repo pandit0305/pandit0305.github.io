@@ -23,7 +23,7 @@ function Contact() {
   //     },
   //   }));
   return (
-    <Box>
+    <Box sx={{mt:10}}>
       <Box
         style={{
           height: "1px",
@@ -36,7 +36,7 @@ function Contact() {
       ></Box>
       <Typography
         variant="h4"
-        sx={{ color: "white", mt: 12, mb: 8, textAlign: "center" }}
+        sx={{ color: "white", mt: 15, mb: 8, textAlign: "center" }}
       >
         GET IN <span style={{color:"#00C7FF"}}>TOUCH</span>
       </Typography>

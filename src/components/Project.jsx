@@ -1,6 +1,6 @@
+import React from "react";
 import {
   Button,
-  Card,
   CardActionArea,
   CardActions,
   CardContent,
@@ -8,37 +8,67 @@ import {
   Typography,
 } from "@mui/material";
 import Chip from "@mui/material/Chip";
+import { styled } from "@mui/material/styles";
 import { Box } from "@mui/system";
-import React from "react";
 
+const Project = ({ title, description, tags, img, liveVersion, source }) => {
+  const CustomCard = styled(CardMedia)(()=> ({
+    border:"5px solid #00C7FF",
+    borderRadius:"10px",
+    height: "200px",
+    maxWidth:"320px",
+    transition: "all 0.5s ease-in-out",
+    "&:hover": {
+      transform: "scale(1.1)",
+      boxShadow: "#00C7FF 0px 5px 15px",
+    },
+  }));
 
-const Project = ({title, description, tags, img, liveVersion, source }) => {
+  const BigCard = styled(CardMedia)(()=> ({
+    maxWidth: "330px", 
+    margin: "1rem",
+    color:"white",
+    border:"1px solid white",
+    borderRadius:"10px",
+    transition: "all 0.5s ease-in-out",
+    "&:hover": {
+      transform: "scale(1.0)",
+      boxShadow: "#00C7FF 0px 5px 15px",
+    },
+  }));
+
   return (
-    <Card sx={{ maxWidth: "330px", margin: "1rem" }}>
-        <CardActionArea>
-      <a target = {'_blank'} rel="noreferrer" href={liveVersion} style={{textDecoration:"none"}}>
-          <CardMedia component="img" image={img} height ="200px"/>
-      </a>
-          <CardContent>
-            <Typography variant="h5" component="div">
-              {title}
-            </Typography>
+    <BigCard>
+      <CardActionArea>
+        <a
+          target={"_blank"}
+          rel="noreferrer"
+          href={liveVersion}
+          style={{ textDecoration: "none" }}
+        >
+          <CustomCard component="img" image={img} />
+        </a>
+        <CardContent>
+          <Typography variant="h5" component="div">
+            {title}
+          </Typography>
 
-            <Typography variant="body" color="text.secondary">
-              {description}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
+          <Typography variant="body" color="white" sx={{paddingTop:"5px"}}>
+            {description}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
 
-
-      <CardActions sx={{ display: "flex", flexDirection: "column", marginBottom:"0px"}}>
+      <CardActions
+        sx={{ display: "flex", flexDirection: "column", marginBottom: "0px" }}
+      >
         <Box
           sx={{
             width: "100%",
             display: "flex",
             justifyContent: "space-between",
             mx: "auto",
-            mb:3
+            mb: 3,
           }}
         >
           <Button
@@ -46,7 +76,16 @@ const Project = ({title, description, tags, img, liveVersion, source }) => {
             style={{ backgroundColor: "rgba(1,199,255,255)" }}
             variant="constained"
           >
-            <a rel="noreferrer" style={{textDecoration:"none", color:"black", fontWeight:"bold"}} target={'_blank'} href={source}>
+            <a
+              rel="noreferrer"
+              style={{
+                textDecoration: "none",
+                color: "black",
+                fontWeight: "bold",
+              }}
+              target={"_blank"}
+              href={source}
+            >
               Source Code
             </a>
           </Button>
@@ -55,7 +94,16 @@ const Project = ({title, description, tags, img, liveVersion, source }) => {
             style={{ backgroundColor: "rgba(0,199,255,255)" }}
             variant="constained"
           >
-            <a rel="noreferrer" style={{textDecoration:"none", color:"black", fontWeight:"bold"}} target={'_blank'} href={liveVersion}>
+            <a
+              rel="noreferrer"
+              style={{
+                textDecoration: "none",
+                color: "black",
+                fontWeight: "bold",
+              }}
+              target={"_blank"}
+              href={liveVersion}
+            >
               Visit
             </a>
           </Button>
@@ -66,19 +114,17 @@ const Project = ({title, description, tags, img, liveVersion, source }) => {
             display: "flex",
             justifyContent: "center",
             flexWrap: "wrap",
-            gap:"1rem",
-            mb:2,
-
+            gap: "1rem",
+            mb: 2,
+           
           }}
-          >
-          {
-            tags.map((ele)=>(
-              <Chip label={ele} key ={ele} variant="outlined"/>
-            ))
-          }
+        >
+          {tags.map((ele) => (
+            <Chip label={ele} key={ele} variant="outlined"  sx={{color:"white"}}/>
+          ))}
         </Box>
       </CardActions>
-    </Card>
+    </BigCard>
   );
 };
 

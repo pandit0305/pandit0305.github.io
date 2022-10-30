@@ -40,3 +40,22 @@ export const icons = [
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   },
 ];
+
+export const tools=[
+  {
+    id:1,
+    name:"VS Code",
+    src:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+  },
+  {
+    id:2,
+    name:"Atom",
+    src:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/atom/atom-original.svg"
+  },
+  {
+    id:3,
+    name:"Atom",
+    src:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/atom/atom-original.svg"
+  }
+
+]

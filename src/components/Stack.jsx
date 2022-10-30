@@ -3,117 +3,130 @@ import React from "react";
 import { icons } from "../constants/icons";
 import Icon from "./Icon";
 
-
 const Stack = () => {
-  const CustomBox =styled(Box)(({theme})=>({
-    maxWidth:"1300px",
-    display:"flex",
-    justifyContent:"space-between",
-    mx:'auto',
-    [theme.breakpoints.down('md')]:{
-     flexDirection:"column" 
-    }
-  }))
+  const CustomBox = styled(Box)(({ theme }) => ({
+    maxWidth: "1300px",
+    display: "flex",
+    justifyContent: "space-between",
+    mx: "auto",
+    [theme.breakpoints.down("md")]: {
+      flexDirection: "column",
+    },
+  }));
 
-  const StackBox =styled(Box)(({theme})=>({
-    marginLeft:"1.5rem",
-    flex:1,
-    display:"flex",
-    justifyContent:"space-around",
-    mx:'auto',
-    [theme.breakpoints.down('md')]:{
-     marginLeft:"0",
-      marginTop:"3rem"
-    }
-  }))
-  return(
-    <>
-    <CustomBox sx={{
-      my:5,
-      padding:2
-    }}
-    id="skills"
-    >
-      <Box sx={{
-        flex:1
-      }}>
-        <Typography variant="h4"
-        sx={{textAlign:"center",mb:3, color:"#00C7FF", fontWeight:"bold"}}
-        >
-          SKILLS
-        </Typography>
-        <Typography variant="h4"
-        sx={{color:'white',textAlign:"center"}}
-        > 
-          I have Learn so far.
-        </Typography>
-      </Box>
-      <StackBox>
-        <Box sx={{
-          dsiplay:"flex",
-          flexDirection:"column",
-          alignItems:"center"
-        }}>
-          {
-            icons.map((ele, i)=>{
-              if(i < 2){
-                return <Icon key={ele.id} name={ele.name} src={ele.src}/>
-              }else{
-                return ""
-              }
-            })
-          }
-        </Box>
-        <Box sx={{
-          dsiplay:"flex",
-          flexDirection:"column",
-          alignItems:"center",
+  const StackBox = styled(Box)(({ theme }) => ({
+    marginLeft: "1.5rem",
+    flex: 1,
+    display: "flex",
+    justifyContent: "space-around",
+    mx: "auto",
+    [theme.breakpoints.down("md")]: {
+      marginLeft: "0",
+      marginTop: "3rem",
+    },
+  }));
+  return (
+    <Box sx={{mt:5}}>
+      <Box
+        style={{
+          height: "1px",
+          width: "100%",
+          border: 0,
+          borderRadius: "25px",
         }}
-       
+        id="skills"
+      ></Box>
+      <CustomBox
+        sx={{
+          my: 5,
+          padding: 2,
+          mt:15
+        }}
+      >
+        <Box
+          sx={{
+            flex: 1,
+          }}
         >
-          {
-            icons.map((ele, i)=>{
-              if(i >= 2 && i < 4){
-                return <Icon key={ele.id} name={ele.name} src={ele.src}/>
-              }else{
-                return ""
-              }
-            })
-          }
+          <Typography
+            variant="h3"
+            sx={{
+              textAlign: "center",
+              mb: 3,
+              color: "#00C7FF",
+              fontWeight: "bold",
+            }}
+          >
+            SKILLS
+          </Typography>
+          <Typography variant="h4" sx={{ color: "white", textAlign: "center" }}>
+            I have Learn so far.
+          </Typography>
         </Box>
-        <Box sx={{
-          dsiplay:"flex",
-          flexDirection:"column",
-          alignItems:"center"
-        }}>
-          {
-            icons.map((ele, i)=>{
-              if(i >= 4 && i < 6){
-                return <Icon key={ele.id} name={ele.name} src={ele.src}/>
-              }else{
-                return ""
+        <StackBox>
+          <Box
+            sx={{
+              dsiplay: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            {icons.map((ele, i) => {
+              if (i < 2) {
+                return <Icon key={ele.id} name={ele.name} src={ele.src} />;
+              } else {
+                return "";
               }
-            })
-          }
-        </Box>
-        <Box sx={{
-          dsiplay:"flex",
-          flexDirection:"column",
-          alignItems:"center"
-        }}>
-          {
-            icons.map((ele, i)=>{
-              if(i >= 6 ){
-                return <Icon key={ele.id} name={ele.name} src={ele.src}/>
-              }else{
-                return ""
+            })}
+          </Box>
+          <Box
+            sx={{
+              dsiplay: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            {icons.map((ele, i) => {
+              if (i >= 2 && i < 4) {
+                return <Icon key={ele.id} name={ele.name} src={ele.src} />;
+              } else {
+                return "";
               }
-            })
-          }
-        </Box>
-      </StackBox>
-    </CustomBox>
-    </>
+            })}
+          </Box>
+          <Box
+            sx={{
+              dsiplay: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            {icons.map((ele, i) => {
+              if (i >= 4 && i < 6) {
+                return <Icon key={ele.id} name={ele.name} src={ele.src} />;
+              } else {
+                return "";
+              }
+            })}
+          </Box>
+          <Box
+            sx={{
+              dsiplay: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            {icons.map((ele, i) => {
+              if (i >= 6) {
+                return <Icon key={ele.id} name={ele.name} src={ele.src} />;
+              } else {
+                return "";
+              }
+            })}
+          </Box>
+        </StackBox>
+      </CustomBox>
+    </Box>
   );
 };
 
