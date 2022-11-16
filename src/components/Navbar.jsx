@@ -47,7 +47,7 @@ const Navbar = () => {
     width: "100%",
     position: "fixed",
     top: "0px",
-    background: "rgba(0,0,0,0.8)",
+    background: "rgba(0,0,75,0.8)",
     zIndex: 1000,
     margin: "auto",
     [theme.breakpoints.down("md")]: {
@@ -95,7 +95,7 @@ const Navbar = () => {
   const changebgColor = () => {
     const scrollValue = window.scrollY;
     console.log(scrollValue);
-    if (scrollValue > 100) {
+    if (scrollValue >= 100) {
       setShadow(true);
     } else {
       setShadow(false);
@@ -103,6 +103,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    changebgColor();
     window.addEventListener("scroll", changebgColor);
   }, []);
 
@@ -115,7 +116,7 @@ const Navbar = () => {
         top="0px"
         // border="1px solid red"
         zIndex="1000"
-        // className={ !shadow ? 'navbar colorChange' : 'navbar'}
+        className={shadow ? "navbar colorChange" : "navbar"}
       >
         <CustomNav>
           <CustomBar>
@@ -146,14 +147,13 @@ const Navbar = () => {
                       fontWeight: "bold",
                       fontFamily: "Brush Script MT, Brush Script Std, cursive",
                       fontSize: "30px",
-                      border:"1px solid white",
-                      borderLeft:"none",
-                      borderRight:"none",
+                      border: "1px solid white",
+                      borderLeft: "none",
+                      borderRight: "none",
                       color: "rgba(0,199,255,255)",
                     }}
                   >
                     Pandit
-                    
                   </Typography>
                 </Box>
               </Link>
@@ -168,31 +168,93 @@ const Navbar = () => {
                       <Typography
                         sx={{
                           borderBottom: "1px solid #00C7FF",
-                          color: "white",
+                          color: "#00C7FF",
+                          fontWeight: "bold",
+                          transition: "all 0.5s ease-in-out",
+                          "&:hover": {
+                            transform: "scale(1.1)",
+                            textShadow: "0px 5px 15px",
+                            fontWeight: "bold",
+                          }
                         }}
                       >
-                        Home
+                        HOME
                       </Typography>
                     </Link>
                     <Link to="about" className="link" smooth>
-                      ABOUT
+                      <Typography
+                        sx={{
+                          transition: "all 0.5s ease-in-out",
+                          "&:hover": {
+                            transform: "scale(1.1)",
+                            textShadow: "0px 5px 15px",
+                            fontWeight: "bold",
+                          },
+                        }}
+                      >
+                        ABOUT
+                      </Typography>
                     </Link>
                     <Link to="project" className="link" smooth>
-                      PROJECTS
+                      <Typography
+                        sx={{
+                          transition: "all 0.5s ease-in-out",
+                          "&:hover": {
+                            transform: "scale(1.1)",
+                            textShadow: "0px 5px 15px",
+                            fontWeight: "bold",
+                          },
+                        }}
+                      >
+                        PROJECTS
+                      </Typography>
                     </Link>
                     <Link to="skills" className="link" smooth>
-                      SKILLS
+                      <Typography
+                        sx={{
+                          transition: "all 0.5s ease-in-out",
+                          "&:hover": {
+                            transform: "scale(1.1)",
+                            textShadow: "0px 5px 15px",
+                            fontWeight: "bold",
+                          },
+                        }}
+                      >
+                        SKILLS
+                      </Typography>
                     </Link>
                     <Link to="contact" className="link" smooth>
-                      CONTACT
+                      <Typography
+                        sx={{
+                          transition: "all 0.5s ease-in-out",
+                          "&:hover": {
+                            transform: "scale(1.1)",
+                            textShadow: "0px 5px 15px",
+                            fontWeight: "bold",
+                          },
+                        }}
+                      >
+                        CONTACT
+                      </Typography>
                     </Link>
                     <a
                       rel="noreferrer"
                       style={{ textDecoration: "none", color: "white" }}
                       target={"_blank"}
-                      href="https://drive.google.com/file/d/1vzK7oPvQh9p2MdIso9_nBwTDN0ZTLrsj/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1vzK7oPvQh9p2MdIso9_nBwTDN0ZTLrsj/view?usp=share_link"
                     >
-                      RESUME
+                      <Typography
+                        sx={{
+                          transition: "all 0.5s ease-in-out",
+                          "&:hover": {
+                            transform: "scale(1.1)",
+                            textShadow: "0px 5px 15px",
+                            fontWeight: "bold",
+                          },
+                        }}
+                      >
+                        RESUME
+                      </Typography>
                     </a>
                   </CustomBox>
                 </>

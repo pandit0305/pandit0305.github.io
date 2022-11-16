@@ -14,19 +14,30 @@ code {
     monospace;
 }
 
+
+body::-webkit-scrollbar{
+  width:10px;
+}
+body::-webkit-scrollbar-track {
+  background: #00C7FF;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 3px solid white;
+}
 .link{
   cursor: pointer;
 }
 
 .navbar.colorChange{
-  box-shadow: #00C7FF;
+  box-shadow: "#00C7FF 0px 5px 15px";
+  
 }
 
 .navbar{
   box-shadow: none;
 }
-
-
 
 @media all and (min-width:768px) and (max-width:1024px){
   #whole-item{

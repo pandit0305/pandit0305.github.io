@@ -1,6 +1,7 @@
 import kfc_appImg from "../media/kfc_app.png";
 import unbounce_appImg from "../media/unbounce_app.png";
 import weather_appImg from "../media/weather_app.png";
+import anthropologie_homeImg from '../media/anthropologie_home.png';
 
 export const projects = [
   {
@@ -9,7 +10,7 @@ export const projects = [
       "A web application for getting weather information based on location.",
     image: weather_appImg,
     tags: ["HTML", "JavaScript", "CSS"],
-    source: "https://github.com/pandit0305/myweather-app/tree/main/weather",
+    source: "https://github.com/pandit0305/Weather_app",
     liveVersion: "https://bejewelled-zabaione-697319.netlify.app/",
     id: 0,
   },
@@ -19,7 +20,7 @@ export const projects = [
       "A fully responsive e-commerce website, built with React, React Router.",
     image: kfc_appImg,
     tags: ["React", "JavaScript", "Firebase", "CSS"],
-    source: "https://github.com/pandit0305/cumbersome-circle-9157/tree/main/kfc-app",
+    source: "https://github.com/pandit0305/kfc-clone-app",
     liveVersion: "https://kfc-app-pandit0305.vercel.app/",
     id: 1,
   },
@@ -29,8 +30,18 @@ export const projects = [
       "This web applications Build landing pages faster with AI and support the customers",
     image: unbounce_appImg,
     tags: ["React", "JavaScript", "CSS"],
-    source: "https://github.com/dan-josh/annoyed-geese-7107/tree/main/unbounce",
+    source: "https://github.com/pandit0305/unbounce",
     liveVersion: "https://fluffy-smakager-0c7aa2.netlify.app/index.html",
+    id: 2,
+  },
+  {
+    title: "Anthropologie Clone",
+    description:
+      "Anthropologie is a unique, full-lifestyle shopping destination, with a mostly exclusive assortment of clothing, shoes, accessories, beauty, furniture, home décor, garden, bridal, and more.",
+    image: anthropologie_homeImg,
+    tags: ["React", "JavaScript", "CSS", "Firebase"],
+    source: "https://github.com/pandit0305/Anthropologie_clone_app",
+    liveVersion: "https://leafy-buttercream-cd6899.netlify.app/",
     id: 2,
   },
 ];

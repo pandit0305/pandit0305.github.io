@@ -5,12 +5,14 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Stats from "./components/github/Stats";
-// import Calendar from './components/github/Calendar';
 import {Box} from '@mui/material'
+import './App.css';
+
+
 
 function App() {
   return (
-    <Box>
+    <Box className="App">
       <Navbar />
       <Box id="whole-item">
         <Home />

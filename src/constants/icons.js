@@ -39,6 +39,21 @@ export const icons = [
     name: "Git",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
   },
+  {
+    id:8,
+    name:"NodeJS",
+    src:"https://cdn.iconscout.com/icon/free/png-128/node-js-1-1174935.png",
+  },
+  {
+    id:9,
+    name:"Epress",
+    src:"https://cdn.iconscout.com/icon/free/png-128/express-9-1175170.png",
+  },
+  {
+    id:10,
+    name:"Epress",
+    src:"https://cdn.iconscout.com/icon/free/png-128/express-9-1175170.png",
+  }
 ];
 
 export const tools=[
@@ -54,8 +69,23 @@ export const tools=[
   },
   {
     id:3,
-    name:"Atom",
-    src:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/atom/atom-original.svg"
+    name:"GitHub",
+    src:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+  },
+  {
+    id:4,
+    name:"Material UI",
+    src:"https://mui.com/static/logo.png"
+  },
+  {
+    id:5,
+    name:"Chakra UI",
+    src:"https://pbs.twimg.com/profile_images/1244925541448286208/rzylUjaf_400x400.jpg"
+  },
+  {
+    id:6,
+    name:"Firebase",
+    src:"https://cdn.iconscout.com/icon/free/png-128/firebase-3521427-2944871.png"
   }
 
 ]

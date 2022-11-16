@@ -1,11 +1,12 @@
 import { Box, Button, styled, Typography } from "@mui/material";
 import React from "react";
 // import { Link } from "react-scroll";
-import pandit1Img from "../media/pandit1.png";
+// import pandit1Img from "../media/pandit1.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PhoneIcon from "@mui/icons-material/Phone";
+// import pdfFile from './Pandit-Gangadhar-Resume.pdf';
 
 const Home = () => {
   const CustomButton = styled(Button)(({ theme }) => ({
@@ -67,7 +68,7 @@ const Home = () => {
           <Box
             component={"img"}
             sx={{ height: "150px", width: "150px", borderRadius: "50%" }}
-            src={pandit1Img}
+            src={"https://avatars.githubusercontent.com/u/71085799?v=4"}
           />
         </Box>
         <Typography
@@ -146,11 +147,23 @@ const Home = () => {
           <CustomButton>
             <a
               rel="noreferrer"
-              target="_blank"
+              // download={true}
+              target={"_blank"}
               style={{ textDecoration: "none", color: "white" }}
-              href="https://drive.google.com/file/d/1vzK7oPvQh9p2MdIso9_nBwTDN0ZTLrsj/view?usp=sharing"
+              href={"https://drive.google.com/file/d/1vzK7oPvQh9p2MdIso9_nBwTDN0ZTLrsj/view?usp=share_link"}
             >
-              RESUME ME
+              RESUME
+            </a>
+          </CustomButton>
+          <CustomButton>
+            <a
+              rel="noreferrer"
+              // download={true}
+              
+              style={{ textDecoration: "none", color: "white" }}
+              href={"https://drive.google.com/uc?export=download&id=1vzK7oPvQh9p2MdIso9_nBwTDN0ZTLrsj"}
+            >
+              DOWNLOAD RESUME
             </a>
           </CustomButton>
         </Box>

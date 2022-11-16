@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
 
-const Icon = ({ name, src }) => {
+const IconTools = ({ name, src }) => {
   return (
     <>
       <Box
@@ -15,7 +15,6 @@ const Icon = ({ name, src }) => {
           maxHeight: "200px",
           padding: "5px",
           borderRadius: "5px",
-
           transition: "all 0.5s ease-in-out",
           "&:hover": {
             transform: "scale(1.1)",
@@ -32,4 +31,4 @@ const Icon = ({ name, src }) => {
   );
 };
 
-export default Icon;
+export default IconTools;

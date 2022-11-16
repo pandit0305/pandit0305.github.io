@@ -1,9 +1,9 @@
 import { Typography, Box, styled } from "@mui/material";
 import React from "react";
-import { icons } from "../constants/icons";
-import Icon from "./Icon";
+import { tools } from "../constants/icons";
+import IconTools from "./IconTools";
 
-const Stack = () => {
+const Tools = () => {
   const CustomBox = styled(Box)(({ theme }) => ({
     maxWidth: "1300px",
     display: "flex",
@@ -26,7 +26,7 @@ const Stack = () => {
     },
   }));
   return (
-    <Box sx={{ mt: 5 }}>
+    <Box sx={{mt:5}}>
       <Box
         style={{
           height: "1px",
@@ -40,7 +40,7 @@ const Stack = () => {
         sx={{
           my: 5,
           padding: 2,
-          mt: 15,
+          mt:15
         }}
       >
         <Box
@@ -49,7 +49,7 @@ const Stack = () => {
           }}
         >
           <Typography
-            variant="h3"
+            variant="h5"
             sx={{
               textAlign: "center",
               mb: 3,
@@ -57,9 +57,9 @@ const Stack = () => {
               fontWeight: "bold",
             }}
           >
-            SKILLS
+            TOOLS
           </Typography>
-          <Typography variant="h4" sx={{ color: "white", textAlign: "center" }}>
+          <Typography variant="h5" sx={{ color: "white", textAlign: "center" }}>
             I have Learn so far.
           </Typography>
         </Box>
@@ -71,9 +71,9 @@ const Stack = () => {
               alignItems: "center",
             }}
           >
-            {icons.map((ele, i) => {
-              if (i < 3) {
-                return <Icon key={ele.id} name={ele.name} src={ele.src} />;
+            {tools.map((ele, i) => {
+              if (i < 2) {
+                return <IconTools key={ele.id} name={ele.name} src={ele.src} />;
               } else {
                 return "";
               }
@@ -86,9 +86,9 @@ const Stack = () => {
               alignItems: "center",
             }}
           >
-            {icons.map((ele, i) => {
-              if (i >= 3 && i < 5) {
-                return <Icon key={ele.id} name={ele.name} src={ele.src} />;
+            {tools.map((ele, i) => {
+              if (i >= 2 && i < 4) {
+                return <IconTools key={ele.id} name={ele.name} src={ele.src} />;
               } else {
                 return "";
               }
@@ -101,9 +101,9 @@ const Stack = () => {
               alignItems: "center",
             }}
           >
-            {icons.map((ele, i) => {
-              if (i >= 5 && i < 7) {
-                return <Icon key={ele.id} name={ele.name} src={ele.src} />;
+            {tools.map((ele, i) => {
+              if (i >= 4 && i < 6) {
+                return <IconTools key={ele.id} name={ele.name} src={ele.src} />;
               } else {
                 return "";
               }
@@ -114,12 +114,11 @@ const Stack = () => {
               dsiplay: "flex",
               flexDirection: "column",
               alignItems: "center",
-            
             }}
           >
-            {icons.map((ele, i) => {
-              if (i >= 7 && i <= 9) {
-                return <Icon key={ele.id} name={ele.name} src={ele.src} />;
+            {tools.map((ele, i) => {
+              if (i >= 6) {
+                return <IconTools key={ele.id} name={ele.name} src={ele.src} />;
               } else {
                 return "";
               }
@@ -131,4 +130,4 @@ const Stack = () => {
   );
 };
 
-export default Stack;
+export default Tools;

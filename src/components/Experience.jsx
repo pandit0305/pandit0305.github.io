@@ -3,6 +3,7 @@ import React from "react";
 import { projects } from "../constants/project";
 import Project from "./Project";
 import Stack from "./Stack";
+import Tools from "./Tools";
 
 const Experience = () => {
   return (
@@ -51,7 +52,12 @@ const Experience = () => {
             />
           ))}
         </Box>
+        <Box>
         <Stack />
+        </Box>
+        <Box>
+          <Tools/>
+        </Box>
       </Box>
     </Box>
   );

@@ -104,7 +104,7 @@ function DrawerComponent() {
                     rel="noreferrer"
                     style={{ textDecoration: "none", color: "white" }}
                     target={"_blank"}
-                    href="https://drive.google.com/file/d/1vzK7oPvQh9p2MdIso9_nBwTDN0ZTLrsj/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1vzK7oPvQh9p2MdIso9_nBwTDN0ZTLrsj/view?usp=share_link"
                   >
                     <Typography sx={{ color: "white", fontWeight: "bold" }}>
                       RESUME
