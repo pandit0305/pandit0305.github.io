@@ -124,14 +124,14 @@ function Stats() {
           </p>
         </CustomBox>
 
-        <GraphBox1>
+        {/* <GraphBox1>
           <a href="https://github.com/pandit0305/">
             <GitImage1
               alt="Pandit Gangadhar's Activity Graph"
               src="https://denvercoder1-activity-graph.herokuapp.com/graph/?username=pandit0305&bg_color=1F222E&color=F8D866&line=F85D7F&point=FFFFFF&hide_border=true"
             />
           </a>
-        </GraphBox1>
+        </GraphBox1> */}
 
         <CustomBox>
           <p>

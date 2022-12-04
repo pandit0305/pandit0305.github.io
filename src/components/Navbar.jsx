@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 import { useState } from "react";
 // import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -13,13 +12,24 @@ import DrawerComponent from "./DrawerComponent";
 import { useMediaQuery, useTheme } from "@mui/material";
 
 const Navbar = () => {
-  const [shadow, setShadow] = useState(false);
+  const [scroll, setScroll] = useState(0);
 
   const theme = useTheme();
-
-  console.log(theme);
+  // console.log(theme);
   const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
   // console.log(isMatch)
+
+  const onScroll = ()=>{
+    const scroll = document.documentElement.scrollTop;
+    const maxHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollpercent = (scroll / maxHeight) * 100;
+
+    setScroll(scrollpercent);
+  }
+
+  window.addEventListener("scroll", onScroll);
+
+
 
   const CustomBox = styled(Box)(({ theme }) => ({
     display: "flex",
@@ -92,20 +102,7 @@ const Navbar = () => {
     },
   }));
 
-  const changebgColor = () => {
-    const scrollValue = window.scrollY;
-    console.log(scrollValue);
-    if (scrollValue >= 100) {
-      setShadow(true);
-    } else {
-      setShadow(false);
-    }
-  };
 
-  useEffect(() => {
-    changebgColor();
-    window.addEventListener("scroll", changebgColor);
-  }, []);
 
   return (
     <React.Fragment>
@@ -116,7 +113,7 @@ const Navbar = () => {
         top="0px"
         // border="1px solid red"
         zIndex="1000"
-        className={shadow ? "navbar colorChange" : "navbar"}
+       
       >
         <CustomNav>
           <CustomBar>
@@ -262,9 +259,12 @@ const Navbar = () => {
             </CustomToolbar>
           </CustomBar>
         </CustomNav>
+        <Box>
+        <Box sx={{backgroundColor:"#00C7FF", height:"3px", width:`${scroll}%`, mt:"70px", filter:"brightness(200%)" , }}></Box>
+        </Box>
       </Box>
     </React.Fragment>
-  );
+  ); 
 };
 
 export default Navbar;

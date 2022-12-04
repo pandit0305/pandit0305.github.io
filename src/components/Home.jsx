@@ -16,7 +16,9 @@ const Home = () => {
     width: "20%",
     fontWeight: "bold",
     borderRadius: "25px",
+    transition: "all 0.5s ease-in-out",
     "$:hover": {
+      transform: "scale(1.1)",
       border: "3px solid white",
       backgroundColor: "transparent",
     },
@@ -52,8 +54,12 @@ const Home = () => {
       fontSize: "1.5rem",
     },
   }));
+
+
   return (
     <Box sx={{ mt: 5 }}>
+       
+
       <Box
         style={{
           height: "1px",
@@ -144,7 +150,7 @@ const Home = () => {
               <PhoneIcon sx={{ mr: 2, color: "white" }} />
             </a>
           </Box>
-          <CustomButton>
+          {/* <CustomButton>
             <a
               rel="noreferrer"
               // download={true}
@@ -154,7 +160,7 @@ const Home = () => {
             >
               RESUME
             </a>
-          </CustomButton>
+          </CustomButton> */}
           <CustomButton>
             <a
               rel="noreferrer"

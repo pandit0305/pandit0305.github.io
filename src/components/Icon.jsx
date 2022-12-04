@@ -9,13 +9,12 @@ const Icon = ({ name, src }) => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          mb: 3,
+          mb: 2,
           border: "1px solid white",
-          maxWidth: "200px",
-          maxHeight: "200px",
+          width: "80px",
+          height: "80px",
           padding: "5px",
           borderRadius: "5px",
-
           transition: "all 0.5s ease-in-out",
           "&:hover": {
             transform: "scale(1.1)",

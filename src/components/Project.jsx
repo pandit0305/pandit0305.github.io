@@ -12,11 +12,11 @@ import { styled } from "@mui/material/styles";
 import { Box } from "@mui/system";
 
 const Project = ({ title, description, tags, img, liveVersion, source }) => {
-  const CustomCard = styled(CardMedia)(()=> ({
-    border:"5px solid #00C7FF",
-    borderRadius:"10px",
+  const CustomCard = styled(CardMedia)(() => ({
+    border: "5px solid #00C7FF",
+    borderRadius: "10px",
     height: "200px",
-    maxWidth:"320px",
+    maxWidth: "320px",
     transition: "all 0.5s ease-in-out",
     "&:hover": {
       transform: "scale(1.1)",
@@ -24,12 +24,12 @@ const Project = ({ title, description, tags, img, liveVersion, source }) => {
     },
   }));
 
-  const BigCard = styled(CardMedia)(()=> ({
-    maxWidth: "330px", 
+  const BigCard = styled(CardMedia)(() => ({
+    maxWidth: "330px",
     margin: "1rem",
-    color:"white",
-    border:"1px solid white",
-    borderRadius:"10px",
+    color: "white",
+    border: "1px solid white",
+    borderRadius: "10px",
     transition: "all 0.5s ease-in-out",
     "&:hover": {
       transform: "scale(1.0)",
@@ -53,7 +53,7 @@ const Project = ({ title, description, tags, img, liveVersion, source }) => {
             {title}
           </Typography>
 
-          <Typography variant="body" color="white" sx={{paddingTop:"5px"}}>
+          <Typography variant="body" color="white" sx={{ paddingTop: "5px" }}>
             {description}
           </Typography>
         </CardContent>
@@ -73,14 +73,22 @@ const Project = ({ title, description, tags, img, liveVersion, source }) => {
         >
           <Button
             size="small"
-            style={{ backgroundColor: "rgba(1,199,255,255)" }}
             variant="constained"
+            sx={{
+              backgroundColor: "rgba(1,199,255,255)",
+              transition: "all 0.5s ease-in-out",
+              "$:hover": {
+                transform: "scale(1.1)",
+                border: "3px solid white",
+                backgroundColor: "transparent",
+              },
+            }}
           >
             <a
               rel="noreferrer"
               style={{
                 textDecoration: "none",
-                color: "black",
+                color: "white",
                 fontWeight: "bold",
               }}
               target={"_blank"}
@@ -91,20 +99,28 @@ const Project = ({ title, description, tags, img, liveVersion, source }) => {
           </Button>
           <Button
             size="small"
-            style={{ backgroundColor: "rgba(0,199,255,255)" }}
             variant="constained"
+            sx={{
+              backgroundColor: "rgba(1,199,255,255)",
+              transition: "all 0.5s ease-in-out",
+              "$:hover": {
+                transform: "scale(1.1)",
+                border: "1px solid white",
+                backgroundColor: "white",
+              },
+            }}
           >
             <a
               rel="noreferrer"
               style={{
                 textDecoration: "none",
-                color: "black",
+                color:"white",
                 fontWeight: "bold",
               }}
               target={"_blank"}
               href={liveVersion}
             >
-              Visit
+              Live
             </a>
           </Button>
         </Box>
@@ -116,11 +132,15 @@ const Project = ({ title, description, tags, img, liveVersion, source }) => {
             flexWrap: "wrap",
             gap: "1rem",
             mb: 2,
-           
           }}
         >
           {tags.map((ele) => (
-            <Chip label={ele} key={ele} variant="outlined"  sx={{color:"white"}}/>
+            <Chip
+              label={ele}
+              key={ele}
+              variant="outlined"
+              sx={{ color: "white" }}
+            />
           ))}
         </Box>
       </CardActions>

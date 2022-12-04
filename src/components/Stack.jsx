@@ -40,7 +40,7 @@ const Stack = () => {
         sx={{
           my: 5,
           padding: 2,
-          mt: 15,
+          mt: 25,
         }}
       >
         <Box
@@ -87,7 +87,7 @@ const Stack = () => {
             }}
           >
             {icons.map((ele, i) => {
-              if (i >= 3 && i < 5) {
+              if (i >= 3 && i < 6) {
                 return <Icon key={ele.id} name={ele.name} src={ele.src} />;
               } else {
                 return "";
@@ -102,7 +102,7 @@ const Stack = () => {
             }}
           >
             {icons.map((ele, i) => {
-              if (i >= 5 && i < 7) {
+              if (i >= 6 && i < 9) {
                 return <Icon key={ele.id} name={ele.name} src={ele.src} />;
               } else {
                 return "";
@@ -118,7 +118,7 @@ const Stack = () => {
             }}
           >
             {icons.map((ele, i) => {
-              if (i >= 7 && i <= 9) {
+              if (i >= 9 && i < 12) {
                 return <Icon key={ele.id} name={ele.name} src={ele.src} />;
               } else {
                 return "";

@@ -41,16 +41,6 @@ export const icons = [
   },
   {
     id:8,
-    name:"NodeJS",
-    src:"https://cdn.iconscout.com/icon/free/png-128/node-js-1-1174935.png",
-  },
-  {
-    id:9,
-    name:"Epress",
-    src:"https://cdn.iconscout.com/icon/free/png-128/express-9-1175170.png",
-  },
-  {
-    id:10,
     name:"Epress",
     src:"https://cdn.iconscout.com/icon/free/png-128/express-9-1175170.png",
   }

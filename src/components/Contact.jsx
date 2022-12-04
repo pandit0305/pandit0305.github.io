@@ -10,6 +10,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import PhoneIcon from "@mui/icons-material/Phone";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { styled } from "@mui/material/styles";
 
 function Contact() {
@@ -49,7 +50,7 @@ function Contact() {
       ></Box>
       <Typography
         variant="h4"
-        sx={{ color: "white", mt: 15, mb: 8, textAlign: "center" }}
+        sx={{ color: "white", mt: 25, mb: 8, textAlign: "center" }}
       >
         GET IN <span style={{ color: "#00C7FF" }}>TOUCH</span>
       </Typography>
@@ -127,8 +128,8 @@ function Contact() {
             }}
           />
         </a>
-        <a rel="noreferrer" target={"_blank"} href="tel:+91-797-999-5281">
-          <PhoneIcon
+        <a rel="noreferrer" target={"_blank"} href="https://wa.me/7979995281">
+          <WhatsAppIcon
             sx={{
               mr: 2,
               color: "white",
@@ -195,7 +196,13 @@ function Contact() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            padding: "10px",
+            padding: "20px",
+            // width:"content-fit",
+            transition: "all 0.5s ease-in-out",
+            "&:hover": {
+              transition: "scale(1,1)",
+              borderRadius: "30px",
+            },
           }}
         >
           <form
@@ -223,19 +230,23 @@ function Contact() {
                 type="text"
                 name="Message"
                 placeholder="Enter Your Message"
+
               />
             </Box>
             <Box>
               <Button
                 type="submit"
-                sx={{ color: "white", border: "1px solid #00C7FF", mt: 2 ,
-                transition: "all 0.5s ease-in-out",
-                "&:hover": {
-                  transform: "scale(1.1)",
-                  backgroundColor: "#00C7FF",
-                  color:"white",
-                },
-              }}
+                sx={{
+                  color: "white",
+                  border: "1px solid #00C7FF",
+                  mt: 2,
+                  transition: "all 0.5s ease-in-out",
+                  "&:hover": {
+                    transform: "scale(1.1)",
+                    backgroundColor: "#00C7FF",
+                    color: "white",
+                  },
+                }}
               >
                 Let's Talk
               </Button>
