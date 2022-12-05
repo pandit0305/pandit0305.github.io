@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.9b9bd175.css",
-    "main.js": "/static/js/main.992f3010.js",
+    "main.css": "/static/css/main.cd4bddc2.css",
+    "main.js": "/static/js/main.e65c749b.js",
     "static/media/anthropologie_home.png": "/static/media/anthropologie_home.b7f24851d0ba257aa3e9.png",
     "static/media/kfc_app.png": "/static/media/kfc_app.a029d3d88ba8bbc3a65b.png",
     "static/media/weather_app.png": "/static/media/weather_app.33cc4254cf504f4788d6.png",
     "static/media/unbounce_app.png": "/static/media/unbounce_app.38636eceb1f07f3a9542.png",
     "index.html": "/index.html",
-    "main.9b9bd175.css.map": "/static/css/main.9b9bd175.css.map",
-    "main.992f3010.js.map": "/static/js/main.992f3010.js.map"
+    "main.cd4bddc2.css.map": "/static/css/main.cd4bddc2.css.map",
+    "main.e65c749b.js.map": "/static/js/main.e65c749b.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b9bd175.css",
-    "static/js/main.992f3010.js"
+    "static/css/main.cd4bddc2.css",
+    "static/js/main.e65c749b.js"
   ]
 }
