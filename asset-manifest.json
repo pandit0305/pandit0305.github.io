@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.921deee6.css",
-    "main.js": "/static/js/main.3a50c10c.js",
+    "main.css": "/static/css/main.9d8d0312.css",
+    "main.js": "/static/js/main.2418975d.js",
     "static/media/anthropologie_home.png": "/static/media/anthropologie_home.b7f24851d0ba257aa3e9.png",
     "static/media/kfc_app.png": "/static/media/kfc_app.a029d3d88ba8bbc3a65b.png",
     "static/media/weather_app.png": "/static/media/weather_app.33cc4254cf504f4788d6.png",
     "static/media/fashionmart.png": "/static/media/fashionmart.b6c30e213cf55c93b494.png",
     "static/media/unbounce_app.png": "/static/media/unbounce_app.38636eceb1f07f3a9542.png",
     "index.html": "/index.html",
-    "main.921deee6.css.map": "/static/css/main.921deee6.css.map",
-    "main.3a50c10c.js.map": "/static/js/main.3a50c10c.js.map"
+    "main.9d8d0312.css.map": "/static/css/main.9d8d0312.css.map",
+    "main.2418975d.js.map": "/static/js/main.2418975d.js.map"
   },
   "entrypoints": [
-    "static/css/main.921deee6.css",
-    "static/js/main.3a50c10c.js"
+    "static/css/main.9d8d0312.css",
+    "static/js/main.2418975d.js"
   ]
 }
