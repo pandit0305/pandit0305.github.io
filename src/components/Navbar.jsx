@@ -16,7 +16,7 @@ const Navbar = () => {
 
   const theme = useTheme();
   // console.log(theme);
-  const isMatch = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
   // console.log(isMatch)
 
   const onScroll = ()=>{
@@ -143,11 +143,13 @@ const Navbar = () => {
                       flexGrow: 1,
                       fontWeight: "bold",
                       fontFamily: "Brush Script MT, Brush Script Std, cursive",
+                      // fontFamily:"Sofia",
                       fontSize: "30px",
                       border: "1px solid white",
                       borderLeft: "none",
                       borderRight: "none",
                       color: "rgba(0,199,255,255)",
+                      textShadow:"0 0 7px white,0 0 10px white,0 0 21px white,0 0 42px white,0 0 82px white, 0 0 92px white, 0 0 102px white,0 0 151px white",
                     }}
                   >
                     Pandit
@@ -163,7 +165,8 @@ const Navbar = () => {
                   <CustomBox>
                     <Link to="home" className="link" smooth>
                       <Typography
-                        sx={{
+                        sx={{      
+                          fontFamily: 'Lorem',                                     
                           borderBottom: "1px solid #00C7FF",
                           color: "#00C7FF",
                           fontWeight: "bold",
@@ -181,6 +184,7 @@ const Navbar = () => {
                     <Link to="about" className="link" smooth>
                       <Typography
                         sx={{
+                          fontFamily: 'Lorem',                                     
                           transition: "all 0.5s ease-in-out",
                           "&:hover": {
                             transform: "scale(1.1)",
@@ -195,6 +199,7 @@ const Navbar = () => {
                     <Link to="project" className="link" smooth>
                       <Typography
                         sx={{
+                          fontFamily: 'Lorem',                                     
                           transition: "all 0.5s ease-in-out",
                           "&:hover": {
                             transform: "scale(1.1)",
@@ -209,6 +214,7 @@ const Navbar = () => {
                     <Link to="skills" className="link" smooth>
                       <Typography
                         sx={{
+                          fontFamily: 'Lorem',                                     
                           transition: "all 0.5s ease-in-out",
                           "&:hover": {
                             transform: "scale(1.1)",
@@ -223,6 +229,7 @@ const Navbar = () => {
                     <Link to="contact" className="link" smooth>
                       <Typography
                         sx={{
+                          fontFamily: 'Lorem',                                     
                           transition: "all 0.5s ease-in-out",
                           "&:hover": {
                             transform: "scale(1.1)",
@@ -237,11 +244,11 @@ const Navbar = () => {
                     <a
                       rel="noreferrer"
                       style={{ textDecoration: "none", color: "white" }}
-                      target={"_blank"}
-                      href="https://drive.google.com/file/d/1vzK7oPvQh9p2MdIso9_nBwTDN0ZTLrsj/view?usp=share_link"
+                      href="https://drive.google.com/uc?export=download&id=1vzK7oPvQh9p2MdIso9_nBwTDN0ZTLrsj"
                     >
                       <Typography
                         sx={{
+                          fontFamily: 'Lorem',                                     
                           transition: "all 0.5s ease-in-out",
                           "&:hover": {
                             transform: "scale(1.1)",

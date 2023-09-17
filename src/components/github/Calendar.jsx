@@ -61,6 +61,7 @@ function Calendar() {
           textAlign: "center",
           mb: 5,
           mt: 3,
+          fontFamily: 'Lorem'
         }}
       >
         GITHUB <span style={{ color: "white" }}>CALENDAR</span>
@@ -70,7 +71,7 @@ function Calendar() {
         sx={{margin:"auto"}}
           username="pandit0305"
           showWeekdayLabels={true}
-          transformData={selectLastHalfYear} 
+          // transformData={selectLastHalfYear} 
           blockSize={10}
          blockRadius="50%"
         color="#00C7FF"

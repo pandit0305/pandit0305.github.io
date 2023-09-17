@@ -88,6 +88,7 @@ function Stats() {
               fontWeight: "bold",
               textAlign: "center",
               mb: 5,
+              fontFamily: 'Lorem'
             }}
           >
             GITHUB <span style={{ color: "white" }}>STATS</span>
@@ -97,7 +98,7 @@ function Stats() {
           <GraphBox>
             <p>
               <GitImage
-                src="https://github-readme-stats.vercel.app/api/top-langs?username=pandit0305&show_icons=true&locale=en&layout=compact&theme=dracula"
+                src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=pandit0305&theme=dracula"
                 alt="pandit0305"
               />
             </p>
@@ -123,8 +124,8 @@ function Stats() {
             />
           </p>
         </CustomBox>
-
-        {/* <GraphBox1>
+{/* 
+        <GraphBox1>
           <a href="https://github.com/pandit0305/">
             <GitImage1
               alt="Pandit Gangadhar's Activity Graph"

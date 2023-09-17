@@ -1,8 +1,9 @@
 import kfc_appImg from "../media/kfc_app.png";
 import unbounce_appImg from "../media/unbounce_app.png";
 import weather_appImg from "../media/weather_app.png";
-import anthropologie_homeImg from '../media/anthropologie_home.png';
-
+import anthropologie_homeImg from "../media/anthropologie_home.png";
+import fashionmartImg from "../media/fashionmart.png";
+import homeGrocers from "../media/myhomegrocers.png";
 export const projects = [
   {
     title: "Weather App",
@@ -20,7 +21,7 @@ export const projects = [
       "A fully responsive e-commerce website, built with React, React Router.",
     image: kfc_appImg,
     tags: ["React", "JavaScript", "Firebase", "CSS"],
-    source: "https://github.com/pandit0305/kfc-clone-app",
+    source: "https://github.com/pandit0305/kfc_website",
     liveVersion: "https://kfc-app-pandit0305.vercel.app/",
     id: 1,
   },
@@ -40,8 +41,28 @@ export const projects = [
       "Anthropologie is a unique, full-lifestyle shopping destination, with a mostly exclusive assortment of clothing, shoes, accessories, beauty, furniture, home décor, garden, bridal, and more.",
     image: anthropologie_homeImg,
     tags: ["React", "JavaScript", "CSS", "Firebase"],
-    source: "https://github.com/pandit0305/Anthropologie_clone_app",
-    liveVersion: "https://leafy-buttercream-cd6899.netlify.app/",
+    source: "https://github.com/Khalidshah12/anthropologie",
+    liveVersion: "https://myanthropology.netlify.app/",
     id: 2,
+  },
+  {
+    title: "Fashion Mart",
+    description:
+      "Ecommerce website for mens,womens,beauty catagorey's basic flow of our website is built a user authetication for login and signup,created product pages for differernt catagory,developed product description page and built a cart and payment section and finally created a admin panel for this website.",
+    image: fashionmartImg,
+    tags: ["React", "Firebase", "express", "mongodb", "Node"],
+    source: "https://github.com/udhai-20/FashionMart",
+    liveVersion: "https://myshop12.netlify.app/",
+    id: 3,
+  },
+  {
+    title: "Ecommerce Template",
+    description:
+    "Ecommerce website for groceries where we can show different catagories and basis of category product will display, In this template, authentication facility is provided.",
+    image: homeGrocers,
+    tags: ["Angular", "Ionic",],
+    source: "https://github.com/pandit0305/ecommerce-project-template",
+    liveVersion: "#",
+    id: 3,
   },
 ];

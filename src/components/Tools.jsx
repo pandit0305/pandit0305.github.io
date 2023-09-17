@@ -59,7 +59,7 @@ const Tools = () => {
           >
             TOOLS
           </Typography>
-          <Typography variant="h5" sx={{ color: "white", textAlign: "center" }}>
+          <Typography variant="h5" sx={{ color: "white", textAlign: "center",fontFamily: 'Lorem' }}>
             I have Learn so far.
           </Typography>
         </Box>

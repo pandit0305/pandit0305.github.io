@@ -57,6 +57,7 @@ function DrawerComponent() {
                           borderBottom: "1px solid #00C7FF",
                           color: "white",
                           fontWeight: "bold",
+                          fontFamily: '"Lorem", serif' 
                         }}
                       >
                         HOME
@@ -71,7 +72,7 @@ function DrawerComponent() {
                   <Link to="about" className="link" smooth>
                     <Box sx={{ display: "flex", justifyContent: "space-between", width:"100px" }}>
                       <AssignmentIndIcon sx={{ color: "rgba(0,199,255,255)" }} />
-                      <Typography sx={{ fontWeight: "bold", color: "white" }}>
+                      <Typography sx={{ fontWeight: "bold", color: "white" , fontFamily: '"Lorem", serif' }}>
                         ABOUT
                       </Typography>
 
@@ -85,7 +86,7 @@ function DrawerComponent() {
                   <Link to="contact" className="link" smooth>
                     <Box sx={{ display: "flex", justifyContent: "space-between", width:"120px" }}>
                       <ContactPageIcon sx={{ color: "rgba(0,199,255,255)" }}/>
-                      <Typography sx={{ color: "white", fontWeight: "bold" }}>
+                      <Typography sx={{ color: "white", fontWeight: "bold",  fontFamily: '"Lorem", serif'  }}>
                         CONTACT
                       </Typography>
                     </Box>
@@ -98,7 +99,7 @@ function DrawerComponent() {
                   <Link to="project" className="link" smooth>
                     <Box sx={{ display: "flex", justifyContent: "space-between", width:"120px" }}>
                       <FeaturedPlayListIcon sx={{ color: "rgba(0,199,255,255)" }}/>
-                      <Typography sx={{ color: "white", fontWeight: "bold" }}>
+                      <Typography sx={{ color: "white", fontWeight: "bold", fontFamily: '"Lorem", serif'}}>
                         PROJECT
                       </Typography>
                     </Box>
@@ -111,7 +112,7 @@ function DrawerComponent() {
                   <Link to="skills" className="link" smooth>
                     <Box sx={{ display: "flex", justifyContent: "space-between", width:"90px" }}>
                       <EmojiEventsIcon sx={{ color: "rgba(0,199,255,255)" }}/>
-                      <Typography sx={{ color: "white", fontWeight: "bold" }}>
+                      <Typography sx={{ color: "white", fontWeight: "bold",  fontFamily: '"Lorem", serif' }}>
                         SKILL
                       </Typography>
                     </Box>
@@ -129,7 +130,8 @@ function DrawerComponent() {
                   >
                     <Box sx={{ display: "flex", justifyContent: "space-between", width:"110px" }}>
                     <DocumentScannerIcon sx={{ color: "rgba(0,199,255,255)" }}/>
-                    <Typography sx={{ color: "white", fontWeight: "bold" }}>
+                                                           
+                    <Typography sx={{ color: "white", fontWeight: "bold",  fontFamily: '"Lorem", serif' }}>
                       RESUME
                     </Typography>
                     </Box>

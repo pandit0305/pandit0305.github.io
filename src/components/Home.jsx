@@ -78,7 +78,7 @@ const Home = () => {
           />
         </Box>
         <Typography
-          sx={{ color: "white", textAlign: "center", mb: 1 ,mt:2}}
+          sx={{ color: "white", textAlign: "center", mb: 1 ,mt:2, fontFamily: 'Lorem'}}
           variant="h6"
         >
           Hello, I am Pandit Gangadhar
@@ -101,6 +101,7 @@ const Home = () => {
               textAlign: "center",
               mb: 2,
               fontSize: "18px",
+              fontFamily: 'Lorem'
             }}
           >
             Inspiring full stack web developer, having problem-solving ability
@@ -109,7 +110,7 @@ const Home = () => {
             projects and 15+ solo projects.
           </Typography>
         </CustomDesc>
-        <CustomTitle variant="h2">
+        <CustomTitle variant="h2" style={{fontFamily: 'Lorem'}}>
           I enjoy{" "}
           <span style={{ color: "rgba(0,199,255,255)" }}>Building </span>
           and <span style={{ color: "rgba(0,199,255,255)" }}>designing </span>

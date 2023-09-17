@@ -26,13 +26,14 @@ const Experience = () => {
             fontWeight: "bold",
             textAlign: "center",
             mb: 5,
+            fontFamily: 'Lorem'
           }}
         >
           PROJECTS
         </Typography>
         <Typography
           variant="h4"
-          sx={{ color: "white", textAlign: "center", mb: 5 }}
+          sx={{ color: "white", textAlign: "center", mb: 5, fontFamily: 'Lorem'}}
         >
           Let's take a look at what I've{" "}
           <span style={{ color: "rgba(0,199,255,255)" }}>built</span> so far.

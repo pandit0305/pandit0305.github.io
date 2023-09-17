@@ -8,38 +8,73 @@ body {
   background-color: rgba(0, 10, 31, 255);
   /* overflow-y: scroll; */
 }
-
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-
-body::-webkit-scrollbar{
-  width:10px;
+body::-webkit-scrollbar {
+  width: 10px;
 }
 body::-webkit-scrollbar-track {
-  background: #00C7FF;
+  background: #00c7ff;
 }
 body::-webkit-scrollbar-thumb {
   background-color: blue;
   border-radius: 20px;
   border: 3px solid white;
 }
-.link{
+/* navbar */
+.link {
   cursor: pointer;
 }
 
-.navbar.colorChange{
+/* contact */
+.phone {
+  transition: all 0.5s ease-in-out;
+}
+
+.phone:hover {
+  border-radius: 30px;
+  color: white;
+  background: rgba(0, 10, 31);
+  text-shadow: 0 0 5px #00c7ff, 0 0 10px #00c7ff, 0 0 15px #00c7ff,
+    0 0 20px #00c7ff, 0 0 30px #00c7ff, 0 0 40px #00c7ff, 0 0 55px #00c7ff,
+    0 0 75px #00c7ff;
+  color: white;
+  background: rgba(0, 10, 31);
+}
+
+.email {
+  transition: all 0.5s ease-in-out;
+}
+.email:hover {
+  border-radius: 30px;
+  color: white;
+  background: rgba(0, 10, 31);
+  text-shadow: 0 0 5px #00c7ff, 0 0 10px #00c7ff, 0 0 15px #00c7ff,
+    0 0 20px #00c7ff, 0 0 30px #00c7ff, 0 0 40px #00c7ff, 0 0 55px #00c7ff,
+    0 0 75px #00c7ff;
+  color: white;
+  background: rgba(0, 10, 31);
+}
+
+/* .navbar.colorChange{
   box-shadow: "#00C7FF 0px 5px 15px";
   
 }
 
 .navbar{
   box-shadow: none;
-}
+} */
 
-@media all and (min-width:768px) and (max-width:1024px){
+/* @media all and (min-width:768px) and (max-width:1024px){
   #whole-item{
     margin-left: 0px;
     
@@ -63,4 +98,4 @@ body::-webkit-scrollbar-thumb {
   
   }
 
-}
+} */

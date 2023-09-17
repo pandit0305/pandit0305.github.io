@@ -50,7 +50,7 @@ function Contact() {
       ></Box>
       <Typography
         variant="h4"
-        sx={{ color: "white", mt: 25, mb: 8, textAlign: "center" }}
+        sx={{ color: "white", mt: 15, mb: 8, textAlign: "center", fontFamily: 'Lorem' }}
       >
         GET IN <span style={{ color: "#00C7FF" }}>TOUCH</span>
       </Typography>
@@ -159,7 +159,8 @@ function Contact() {
           rel="noreferrer"
           target={"_blank"}
           href="tel:+91-797-999-5281"
-          style={{ color: "white", textDecoration: "none" }}
+          style={{ color: "white", textDecoration: "none"}}
+
         >
           <PhoneIcon
             sx={{
@@ -167,9 +168,14 @@ function Contact() {
               color: "white",
             }}
           />
+          <span 
+          className="phone"
+          >
           +91-797-999-5281
+          </span>
         </a>
         <a
+        
           rel="noreferrer"
           target={"_blank"}
           href="mailto: panditgangadhar.may3@gmail.com"
@@ -181,12 +187,16 @@ function Contact() {
               color: "white",
             }}
           />
+          <span 
+          className="email"
+          >
           panditgangadhar.may3@gmail.com
+          </span>
         </a>
       </Box>
       <Typography
         variant="h4"
-        sx={{ color: "white", mt: 15, mb: 8, textAlign: "center" }}
+        sx={{ color: "white", mt: 15, mb: 8, textAlign: "center", fontFamily: 'Lorem' }}
       >
         Text <span style={{ color: "#00C7FF" }}>Me</span>
       </Typography>
@@ -237,6 +247,7 @@ function Contact() {
               <Button
                 type="submit"
                 sx={{
+                  fontFamily: 'Lorem',
                   color: "white",
                   border: "1px solid #00C7FF",
                   mt: 2,

@@ -17,13 +17,14 @@ const Footer = () => {
           height:"300px",
           display: "flex",
           justifyContent: "space-around",
-          mt:10
+          mt:10,
+          fontFamily: 'Lorem'
         }}
       >
         <Box sx={{ display: "flex", flexDirection: "column" }}>
           <Typography
             variant="body1"
-            sx={{ color: "#7889AB", fontWeight: "bold", mb: 2 }}
+            sx={{ color: "#7889AB", fontWeight: "bold", mb: 2, fontFamily: 'Lorem' }}
           >
             PAGES
           </Typography>
@@ -61,7 +62,7 @@ const Footer = () => {
         >
           <Typography
             variant="body1"
-            sx={{ color: "#7889AB", fontWeight: "bold", mb: 2 }}
+            sx={{ color: "#7889AB", fontWeight: "bold", mb: 2,fontFamily: 'Lorem' }}
           >
             SOCIAL
           </Typography>
@@ -75,7 +76,7 @@ const Footer = () => {
               sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}
             >
               <GitHubIcon sx={{ mr: 2, color: "white" }} />
-              <Typography variant="body2" sx={{ color: "white", my: 1 }}>
+              <Typography variant="body2" sx={{ color: "white", my: 1,fontFamily: 'Lorem' }}>
                 GitHub
               </Typography>
             </Box>
@@ -91,7 +92,7 @@ const Footer = () => {
               sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}
             >
               <EmailIcon sx={{ mr: 2, color: "white" }} />
-              <Typography variant="body2" sx={{ color: "white", my: 1 }}>
+              <Typography variant="body2" sx={{ color: "white", my: 1 ,fontFamily: 'Lorem'}}>
                 Email
               </Typography>
             </Box>
@@ -107,14 +108,14 @@ const Footer = () => {
               sx={{ display: "flex", alignItems: "center", cursor: "pointer" }}
             >
               <LinkedInIcon sx={{ mr: 2, color: "white" }} />
-              <Typography variant="body2" sx={{ color: "white", my: 1 }}>
+              <Typography variant="body2" sx={{ color: "white", my: 1 ,fontFamily: 'Lorem'}}>
                 LinkedIn
               </Typography>
             </Box>
           </a>
         </Box>
       </Box>
-        <Box style={{width:"100%", color:"white",textAlign:"center", mb:"5px"}}>
+        <Box style={{width:"100%", color:"white",textAlign:"center", mb:"5px", fontFamily: 'Lorem'}}>
             Created By <span style={{color:"#00C7FF"}}>Pandit Gangadhar</span>
         </Box>
     </>

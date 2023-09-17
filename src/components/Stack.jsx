@@ -40,7 +40,7 @@ const Stack = () => {
         sx={{
           my: 5,
           padding: 2,
-          mt: 25,
+          mt: 15,
         }}
       >
         <Box
@@ -51,6 +51,7 @@ const Stack = () => {
           <Typography
             variant="h3"
             sx={{
+              fontFamily: 'Lorem',
               textAlign: "center",
               mb: 3,
               color: "#00C7FF",
@@ -59,7 +60,7 @@ const Stack = () => {
           >
             SKILLS
           </Typography>
-          <Typography variant="h4" sx={{ color: "white", textAlign: "center" }}>
+          <Typography variant="h4" sx={{ color: "white", textAlign: "center",fontFamily: 'Lorem'}}>
             I have Learn so far.
           </Typography>
         </Box>
@@ -72,7 +73,7 @@ const Stack = () => {
             }}
           >
             {icons.map((ele, i) => {
-              if (i < 3) {
+              if (i <= 3) {
                 return <Icon key={ele.id} name={ele.name} src={ele.src} />;
               } else {
                 return "";
@@ -87,7 +88,7 @@ const Stack = () => {
             }}
           >
             {icons.map((ele, i) => {
-              if (i >= 3 && i < 6) {
+              if (i > 3 && i <= 7) {
                 return <Icon key={ele.id} name={ele.name} src={ele.src} />;
               } else {
                 return "";
@@ -102,23 +103,7 @@ const Stack = () => {
             }}
           >
             {icons.map((ele, i) => {
-              if (i >= 6 && i < 9) {
-                return <Icon key={ele.id} name={ele.name} src={ele.src} />;
-              } else {
-                return "";
-              }
-            })}
-          </Box>
-          <Box
-            sx={{
-              dsiplay: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            
-            }}
-          >
-            {icons.map((ele, i) => {
-              if (i >= 9 && i < 12) {
+              if (i > 7 &&  i <= 10) {
                 return <Icon key={ele.id} name={ele.name} src={ele.src} />;
               } else {
                 return "";

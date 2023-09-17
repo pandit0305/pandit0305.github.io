@@ -41,8 +41,18 @@ export const icons = [
   },
   {
     id:8,
-    name:"Epress",
+    name:"Express",
     src:"https://cdn.iconscout.com/icon/free/png-128/express-9-1175170.png",
+  },
+  {
+    id:9,
+    name:"Mongodb",
+    src:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+  },
+  {
+    id:10,
+    name:"Angular",
+    src:"https://angular.io/assets/images/logos/angular/angular.png",
   }
 ];
 
@@ -74,8 +84,14 @@ export const tools=[
   },
   {
     id:6,
-    name:"Firebase",
-    src:"https://cdn.iconscout.com/icon/free/png-128/firebase-3521427-2944871.png"
-  }
+    name:"Ionic",
+    src:"https://www.svgrepo.com/show/353912/ionic-icon.svg"
+  },
+  {
+    id:7,
+    name:"AWS",
+    src:"https://cdn.iconscout.com/icon/free/png-256/free-aws-1869025-1583149.png"
+  },
+  
 
 ]

@@ -49,11 +49,11 @@ const Project = ({ title, description, tags, img, liveVersion, source }) => {
           <CustomCard component="img" image={img} />
         </a>
         <CardContent>
-          <Typography variant="h5" component="div">
+          <Typography variant="h5" component="div" sx={{fontFamily: 'Lorem'}}>
             {title}
           </Typography>
 
-          <Typography variant="body" color="white" sx={{ paddingTop: "5px" }}>
+          <Typography variant="body" color="white" sx={{ paddingTop: "5px",fontFamily: 'Lorem',fontSize:"16px" }}>
             {description}
           </Typography>
         </CardContent>
@@ -87,6 +87,7 @@ const Project = ({ title, description, tags, img, liveVersion, source }) => {
             <a
               rel="noreferrer"
               style={{
+                fontFamily: 'Lorem',
                 textDecoration: "none",
                 color: "white",
                 fontWeight: "bold",
@@ -113,6 +114,7 @@ const Project = ({ title, description, tags, img, liveVersion, source }) => {
             <a
               rel="noreferrer"
               style={{
+                fontFamily: 'Lorem',
                 textDecoration: "none",
                 color:"white",
                 fontWeight: "bold",

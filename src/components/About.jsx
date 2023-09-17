@@ -41,7 +41,7 @@ const About = () => {
         <CustomtitleBox>
           <Typography
             variant="h4"
-            sx={{ color: "white", textAlign: "center", fontWeight: "bold" }}
+            sx={{ color: "white", textAlign: "center", fontWeight: "bold",fontFamily:"Lorem" }}
           >
             ABOUT <span style={{ color: "#00C7FF" }}>ME</span>
           </Typography>
