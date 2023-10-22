@@ -62,7 +62,7 @@ export const projects = [
     image: homeGrocers,
     tags: ["Angular", "Ionic",],
     source: "https://github.com/pandit0305/ecommerce-project-template",
-    liveVersion: "#",
+    liveVersion: "https://main.d43on8rrvvf6o.amplifyapp.com/home",
     id: 3,
   },
 ];

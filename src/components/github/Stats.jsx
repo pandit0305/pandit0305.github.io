@@ -37,15 +37,15 @@ function Stats() {
     margin: "auto",
   }));
 
-  const GraphBox1 = styled(Box)(({ theme }) => ({
-    maxWidth: "1300px",
-    display: "flex",
-    flexWrap: "wrap",
-    flexDirection: "column",
-    justifyContent: "center",
-    mx: "auto",
-    margin: "auto",
-  }));
+  // const GraphBox1 = styled(Box)(({ theme }) => ({
+  //   maxWidth: "1300px",
+  //   display: "flex",
+  //   flexWrap: "wrap",
+  //   flexDirection: "column",
+  //   justifyContent: "center",
+  //   mx: "auto",
+  //   margin: "auto",
+  // }));
 
   const GitImage = styled(Image)(({ theme }) => ({
     maxWidth: "500px",
@@ -57,16 +57,16 @@ function Stats() {
       maxWidth: "300px",
     },
   }));
-  const GitImage1 = styled(Image)(({ theme }) => ({
-    maxWidth: "900px",
-    height: "200px",
-    display: "flex",
-    flexDirection: "column",
-    flexWrap: "wrap",
-    [theme.breakpoints.down("md")]: {
-      maxWidth: "300px",
-    },
-  }));
+  // const GitImage1 = styled(Image)(({ theme }) => ({
+  //   maxWidth: "900px",
+  //   height: "200px",
+  //   display: "flex",
+  //   flexDirection: "column",
+  //   flexWrap: "wrap",
+  //   [theme.breakpoints.down("md")]: {
+  //     maxWidth: "300px",
+  //   },
+  // }));
   return (
     <>
       <Box

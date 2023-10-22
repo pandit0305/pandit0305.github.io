@@ -168,7 +168,7 @@ const Home = () => {
               // download={true}
               
               style={{ textDecoration: "none", color: "white" }}
-              href={"https://drive.google.com/uc?export=download&id=1vzK7oPvQh9p2MdIso9_nBwTDN0ZTLrsj"}
+              href={"https://drive.google.com/uc?export=download&id=1CjHOQtkjuDVJvwKJzh2rsfvI4VXKBVju"}
             >
               DOWNLOAD RESUME
             </a>

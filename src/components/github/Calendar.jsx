@@ -4,22 +4,22 @@ import ReactToolTip from "react-tooltip"
 import { Typography, Box, styled } from "@mui/material";
 // import Image from 'mui-image';
 
-const selectLastHalfYear = contributions => {
-    const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth();
-    const shownMonths = 6;
+// const selectLastHalfYear = contributions => {
+//     const currentYear = new Date().getFullYear();
+//     const currentMonth = new Date().getMonth();
+//     const shownMonths = 6;
   
-    return contributions.filter(day => {
-      const date = new Date(day.date);
-      const monthOfDay = date.getMonth();
+//     return contributions.filter(day => {
+//       const date = new Date(day.date);
+//       const monthOfDay = date.getMonth();
   
-      return (
-        date.getFullYear() === currentYear &&
-        monthOfDay > currentMonth - shownMonths &&
-        monthOfDay <= currentMonth
-      );
-    });
-  };
+//       return (
+//         date.getFullYear() === currentYear &&
+//         monthOfDay > currentMonth - shownMonths &&
+//         monthOfDay <= currentMonth
+//       );
+//     });
+//   };
 
 function Calendar() {
 
