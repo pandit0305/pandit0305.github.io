@@ -120,7 +120,7 @@ const Project = ({ title, description, tags, img, liveVersion, source }) => {
                 fontWeight: "bold",
               }}
               target={"_blank"}
-              href={liveVersion}
+              href="#"
             >
               Live
             </a>
